@@ -1,0 +1,128 @@
+{{> partials/splash}}
+
+[TOC]
+
+## Details
+
+- **Client** {{client_name}}
+- **Date** {{date}}
+- **Lead reviewer** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn))
+- **Reviewers** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn)), Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
+- **Repository**: [{{project_name}}]({{source_repository}})
+- **Commit hash** `{{commit_hash}}`
+- **Technologies**
+  - Solidity
+  - Node.JS
+
+## Issues Summary
+
+| SEVERITY       |    OPEN    |    CLOSED    |
+|----------------|:----------:|:------------:|
+{{#issues_summary}}
+|  {{severity}}  |  {{open}}  |  {{closed}}  |
+{{/issues_summary}}
+
+## Executive summary
+
+This report represents the results of the engagement with **{{client_name}}** to review **{{project_name}}**.
+
+The review was conducted over the course of **{{review_period}}** from **{{date_interval}}**. A total of **{{person_days}} person-days** were spent reviewing the code.
+
+### Week 1
+
+During the first week, we ...
+
+### Week 2
+
+The second week was ...
+
+## Scope
+
+The initial review focused on the [{{project_name}}]({{source_repository}}) repository, identified by the commit hash `{{commit_hash}}`.
+
+We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability.
+
+**Includes:**
+- code/contracts/PotOfGold.sol
+
+
+## Recommendations
+
+We identified a few possible general improvements that are not security issues during the review, which will bring value to the developers and the community reviewing and using the product.
+
+A good rule of thumb is to have 100% test coverage. This does not guarantee the lack of security problems, but it means that the desired functionality behaves as intended. The negative tests also bring a lot of value because not allowing some actions to happen is also part of the desired behavior.
+
+
+## Issues
+
+{{#issues}}
+
+### [{{title}}]({{url}})
+![Issue status: {{status}}](https://img.shields.io/static/v1?label=Status&message={{status}}&color={{status_color}}&style=flat-square) ![{{severity}}](https://img.shields.io/static/v1?label=Severity&message={{severity}}&color={{severity_color}}&style=flat-square)
+
+{{{body}}}
+
+---
+
+{{/issues}}
+
+## Artifacts
+
+### Surya
+
+Sūrya is a utility tool for smart contract systems. It provides a number of visual outputs and information about the structure of smart contracts. It also supports querying the function call graph in multiple ways to aid in the manual inspection and control flow analysis of contracts.
+
+<!-- **Contracts Description Table**
+
+```text
+surya mdreport report.md Contract.sol
+```
+
+-->
+
+#### Graphs
+
+<!-- ***Contract***
+
+```text
+surya graph Contract.sol | dot -Tpng > ./static/Contract_graph.png
+```
+
+![Contract Graph](./static/Contract_graph.png)
+
+```text
+surya inheritance Contract.sol | dot -Tpng > ./static/Contract_inheritance.png
+```
+
+![Contract Inheritance](./static/Contract_inheritance.png)
+
+```text
+Use Solidity Visual Auditor
+```
+
+![Contract UML](./static/Contract_uml.png) -->
+
+#### Describe
+
+<!-- ```text
+$ npx surya describe ./Contract.sol
+``` -->
+
+### Coverage
+
+<!-- ```text
+$ npm run coverage
+``` -->
+
+### Tests
+
+<!-- ```text
+$ npx buidler test
+``` -->
+
+## License
+
+This report falls under the terms described in the included [LICENSE](./LICENSE).
+
+{{> partials/features}}
+<link rel="stylesheet" href="./style/print.css"/>
