@@ -3,7 +3,7 @@
   "client_name": "HaloDAO",
   "review_period": "2 weeks",
   "date_interval": "16th of August to 27th of August, 2021",
-  "person_days": "15",
+  "person_days": "20",
   "template": "./Readme.md.mustache",
   "date": "August 2021",
   "commit_hash": "d1d511f15d359a9f1973fa720f5c27bc2f888ced",
