@@ -6,13 +6,13 @@
 
 - **Client** {{client_name}}
 - **Date** {{date}}
-- **Lead reviewer** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn))
+- **Lead reviewer** Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
 - **Reviewers** Daniel Luca ([@cleanunicorn](https://twitter.com/cleanunicorn)), Andrei Simion ([@andreiashu](https://twitter.com/andreiashu))
 - **Repository**: [{{project_name}}]({{source_repository}})
 - **Commit hash** `{{commit_hash}}`
 - **Technologies**
   - Solidity
-  - Node.JS
+  - TypeScript
 
 ## Issues Summary
 
@@ -24,17 +24,12 @@
 
 ## Executive summary
 
+
 This report represents the results of the engagement with **{{client_name}}** to review **{{project_name}}**.
 
-The review was conducted over the course of **{{review_period}}** from **{{date_interval}}**. A total of **{{person_days}} person-days** were spent reviewing the code.
+The review is part of a broader engagement with HaloDAO that includes several other components from the HaloDAO ecosystem (Halo Rewards, Halo AMM, Halo Bridge, Halo Bridge Handler).
 
-### Week 1
-
-During the first week, we ...
-
-### Week 2
-
-The second week was ...
+The full review (across above-mentioned repositories) was conducted over the course of **{{review_period}}** from **{{date_interval}}**. We spent a total of **{{person_days}} person-days** reviewing the code.
 
 ## Scope
 
@@ -43,6 +38,7 @@ The initial review focused on the [{{project_name}}]({{source_repository}}) repo
 We focused on manually reviewing the codebase, searching for security issues such as, but not limited to, re-entrancy problems, transaction ordering, block timestamp dependency, exception handling, call stack depth limitation, integer overflow/underflow, self-destructible contracts, unsecured balance, use of origin, costly gas patterns, architectural problems, code readability.
 
 **Includes:**
+
 - code/contracts/PotOfGold.sol
 
 
