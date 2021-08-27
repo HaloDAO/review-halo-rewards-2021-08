@@ -181,6 +181,8 @@ The `convert` function can accept an additional parameter `minRNBWAmount` that c
 
 [DEFI Sandwich Attack Explaination](https://medium.com/coinmonks/defi-sandwich-attack-explain-776f6f43b2fd)
 
+[Rapid Rise of MEV in Ethereum](https://medium.com/etherscan-blog/rapid-rise-of-mev-in-ethereum-9bcb62e53517)
+
 
 ---
 
