@@ -82,8 +82,8 @@
 | SEVERITY       |    OPEN    |    CLOSED    |
 |----------------|:----------:|:------------:|
 |  Informational  |  0  |  0  |
-|  Minor  |  1  |  0  |
-|  Medium  |  1  |  0  |
+|  Minor  |  0  |  1  |
+|  Medium  |  0  |  1  |
 |  Major  |  0  |  0  |
 
 ## Executive summary
@@ -114,7 +114,7 @@ A good rule of thumb is to have 100% test coverage. This does not guarantee the 
 
 
 ### [`PotOfGold.convert()` is vulnerable to price manipulation attacks](https://github.com/monoceros-alpha/review-halo-rewards-2021-08/issues/1)
-![Issue status: Open](https://img.shields.io/static/v1?label=Status&message=Open&color=5856D6&style=flat-square) ![Medium](https://img.shields.io/static/v1?label=Severity&message=Medium&color=FF9500&style=flat-square)
+![Issue status: Fixed](https://img.shields.io/static/v1?label=Status&message=Fixed&color=5AC8FA&style=flat-square) ![Medium](https://img.shields.io/static/v1?label=Severity&message=Medium&color=FF9500&style=flat-square)
 
 **Description**
 
@@ -188,7 +188,7 @@ The `convert` function can accept an additional parameter `minRNBWAmount` that c
 
 
 ### [Unnecessary wrapper function `_toRNBW`](https://github.com/monoceros-alpha/review-halo-rewards-2021-08/issues/2)
-![Issue status: Open](https://img.shields.io/static/v1?label=Status&message=Open&color=5856D6&style=flat-square) ![Minor](https://img.shields.io/static/v1?label=Severity&message=Minor&color=FFCC00&style=flat-square)
+![Issue status: Fixed](https://img.shields.io/static/v1?label=Status&message=Fixed&color=5AC8FA&style=flat-square) ![Minor](https://img.shields.io/static/v1?label=Severity&message=Minor&color=FFCC00&style=flat-square)
 
 **Description**
 
